@@ -143,7 +143,7 @@ function a:Window(f, f, f)
     local f = f or Enum.KeyCode.RightControl
     local f = string.gsub(tostring(f), "Enum.KeyCode.", "")
     local f = Instance.new("ScreenGui")
-    f.Name = "AlchemyHubUI"
+    f.Name = "KazHubUI"
     f.Parent = game.CoreGui
     f.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     local i = Instance.new("Frame")
@@ -1814,4 +1814,4 @@ function a:Window(f, f, f)
     end
     return d
 end
-return 
+return a
