@@ -1,5 +1,5 @@
 repeat wait(1) until game:IsLoaded()
-local AlchemyNotify = function(Text_i,Duration_i)
+local KazNotify = function(Text_i,Duration_i)
     game.StarterGui:SetCore("SendNotification", {
         Title = "Kaz Hub v1",
         Text = Text_i,
@@ -9,39 +9,39 @@ local AlchemyNotify = function(Text_i,Duration_i)
 end
 --Key
 wait(0.1)
-AlchemyNotify("Thanks for using Kaz Hub!",5)
+KazNotify("Thanks for using KazRblx Hub!",5)
 wait(0.1)
-AlchemyNotify("https://discord.gg/PHePRpRMXt",5)
+KazNotify("https://discord.gg/PHePRpRMXt",5)
 wait(0.5)
 local Notification = require(game:GetService("ReplicatedStorage").Notification)
-Notification.new("<Color=Cyan>Kaz Hub V1Script<Color=/>"):Display()
+Notification.new("<Color=Red>Kaz Hub Script<Color=/>"):Display()
 wait(0.5)
-Notification.new("<Color=Yellow>Create By kaz_2205<Color=/>"):Display()
+Notification.new("<Color=Blue>Create By kaz_2205<Color=/>"):Display()
 wait(1)
 repeat
     wait()
 until game.Players.LocalPlayer
 --main
-local ui_link = "https://raw.githubusercontent.com/ZoiIntra/Dec/main/afsZz.lua"
+local ui_link = "https://raw.githubusercontent.com/Kaz14bypasser/hub/main/hub.lua"
 local a = loadstring(game:HttpGet(ui_link))()
 local a = a:Window("Pre Version 1 | Blox Fruit")
 local HomePage = a:Tab("Home", "rbxassetid://16062922985")
-local Main = a:Tab("Main", "rbxassetid://15712703260")
+local Main = a:Tab("Main Farm", "rbxassetid://15712703260")
 local Set = a:Tab("Setting", "rbxassetid://15712711639")
-local Farm = a:Tab("Farm", "rbxassetid://15712717270")
+local Farm = a:Tab("Mission Farm", "rbxassetid://15712717270")
 local Stats = a:Tab("Stats", "rbxassetid://15712723981")
 local Race = a:Tab("Race V4", "rbxassetid://15712776421")
-local Event = a:Tab("Games Event", "rbxassetid://15806749681")
+local Event = a:Tab("Sea Event", "rbxassetid://15806749681")
 local Tele = a:Tab("Teleport", "rbxassetid://15712738876")
 local Player = a:Tab("Player", "rbxassetid://15712750195")
 local DemonFruit = a:Tab("Devil Fruit", "rbxassetid://15712758182")
-local Raid = a:Tab("Raid", "rbxassetid://15712763124")
+local Raid = a:Tab("Raid Fruit", "rbxassetid://15712763124")
 local Shop = a:Tab("Shop", "rbxassetid://15712767144")
 local Misc = a:Tab("Misc", "rbxassetid://15712771666")
 
-HomePage:Seperator("Kaz Hub Pre")
+HomePage:Seperator("KazRblx Hub Pre")
 
-HomePage:Label("Blox Fruits | English Version")
+HomePage:Label("Blox Fruits | English Version because the hub owner is lazy to translate into Vietnamese ")
 
 HomePage:Seperator("Status")
 local AlchemyStatuOn_Time = HomePage:Label("")
@@ -65,6 +65,10 @@ task.spawn(function()
     end
 end)
 HomePage:Label("Join Our Discord for News")
+HomePage:Label("You Can Experience The Meme Sea Script")
+HomePage:Button("Copy Script Meme Sea", function()
+ KazNotify("Copy Script Meme Sea!",5)
+    setclipboard("loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaz14bypasser/meme-sea-hub/main/kazrblx.lua"))()")
 HomePage:Label("MADE BY KAZ")
 HomePage:Button("Copy Discord Link", function()
     AlchemyNotify("Copy Discord Link!",5)
