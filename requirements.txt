@@ -2,5 +2,4 @@ Flask
 gunicorn
 requests
 time
-json
 socket
