@@ -12,7 +12,7 @@ valid_api_keys = ["1234", "kaz1234", "key3"]
 valid_links = ["https://gateway.platoboost.com/a/", "https://loot-link.com/s?", "https://flux.li/android/external/start.php?"]
 
 error_log_path = './error_reports.txt'
-DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/your_webhook_url"
+DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1298281635023687701/_vP18Zxi6_dhT2C0oageEbeFzZ2aGyvL53_5vps7v9f6VUUy-zkA8jWu-X6Drh-8Qo_Y"
 
 html_template = """
 <html>
@@ -95,4 +95,4 @@ def timeapi():
     return f"Tốc độ thời gian web đã chạy: {duration:.2f} giây, Vị trí IP: {ip_address}"
 
 if __name__ == '__main__':
-   app.run(host='host.com', port=5000)
+   app.run(host='0.0.0.0', port=5000)
