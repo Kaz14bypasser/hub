@@ -1,2 +1,7 @@
 Flask
 gunicorn
+requests
+subprocess
+time
+json
+socket
